@@ -3,7 +3,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { db } from '@/lib/firebase';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
-import { Shield, Link2, MousePointerClick, TrendingUp, Copy, Check, LogOut } from 'lucide-react';
+import { Link2, MousePointerClick, TrendingUp, Copy, Check, LogOut } from 'lucide-react';
 
 interface TrackingLink {
   id: string;
@@ -64,9 +64,7 @@ export default function Portal() {
       {/* Header */}
       <header className="relative z-10 border-b border-border/40 px-6 py-4 flex items-center justify-between glass-panel-light">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-neon-indigo to-neon-pink flex items-center justify-center">
-            <Shield className="w-4 h-4 text-background" />
-          </div>
+          <img src="/logo.png" alt="AMP Logo" className="w-8 h-8 rounded-lg object-contain" />
           <span className="font-outfit font-bold gradient-text">AMP Mediaz</span>
           <span className="text-xs text-muted-foreground">• Affiliate Portal</span>
         </div>

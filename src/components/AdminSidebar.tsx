@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Shield, LayoutDashboard, Users, Link2, UserCog, Settings, Database, LogOut, ChevronLeft, ChevronRight, Menu } from 'lucide-react';
+import { LayoutDashboard, Users, Link2, UserCog, Settings, Database, LogOut, ChevronLeft, ChevronRight, Menu } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 
 const navItems = [
@@ -25,9 +25,8 @@ export function AdminSidebar() {
 
   return (
     <aside
-      className={`flex flex-col h-screen sticky top-0 transition-all duration-300 ${
-        collapsed ? 'w-16' : 'w-60'
-      }`}
+      className={`flex flex-col h-screen sticky top-0 transition-all duration-300 ${collapsed ? 'w-16' : 'w-60'
+        }`}
       style={{
         background: 'hsl(var(--sidebar-background))',
         borderRight: '1px solid hsl(var(--sidebar-border))',
@@ -35,9 +34,7 @@ export function AdminSidebar() {
     >
       {/* Logo */}
       <div className="flex items-center gap-3 px-4 py-5 border-b border-sidebar-border">
-        <div className="w-8 h-8 shrink-0 rounded-lg bg-gradient-to-br from-neon-indigo to-neon-pink flex items-center justify-center">
-          <Shield className="w-4 h-4 text-background" />
-        </div>
+        <img src="/logo.png" alt="AMP Logo" className="w-8 h-8 shrink-0 rounded-lg object-contain" />
         {!collapsed && (
           <span className="font-outfit font-bold text-base gradient-text whitespace-nowrap">AMP Mediaz</span>
         )}
