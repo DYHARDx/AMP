@@ -123,7 +123,7 @@ export default function TeamAccess() {
               </div>
             )}
             <form onSubmit={createAdmin} className="space-y-4">
-              {[{ label: 'Full Name', key: 'name', type: 'text', ph: 'Admin Name' }, { label: 'Email', key: 'email', type: 'email', ph: 'admin@amp.com' }, { label: 'Password', key: 'password', type: 'password', ph: '••••••••' }].map(f => (
+              {[{ label: 'Full Name', key: 'name', type: 'text', ph: 'Admin Name' }, { label: 'Email', key: 'email', type: 'email', ph: 'admin@pyronex.com' }, { label: 'Password', key: 'password', type: 'password', ph: '••••••••' }].map(f => (
                 <div key={f.key}>
                   <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1.5 block">{f.label}</label>
                   <input type={f.type} value={form[f.key as keyof typeof form]} onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))} placeholder={f.ph} required className="w-full px-4 py-2.5 rounded-lg text-sm bg-muted/50 border border-border focus:border-neon-indigo/50 focus:outline-none transition-all" />

@@ -64,8 +64,8 @@ export default function Portal() {
       {/* Header */}
       <header className="relative z-10 border-b border-border/40 px-6 py-4 flex items-center justify-between glass-panel-light">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="AMP Logo" className="w-8 h-8 rounded-lg object-contain" />
-          <span className="font-outfit font-bold gradient-text">AMP Mediaz</span>
+          <img src="/logo.png" alt="Pyronex Logo" className="w-8 h-8 rounded-lg object-contain" />
+          <span className="font-outfit font-bold gradient-text">Pyronex</span>
           <span className="text-xs text-muted-foreground">• Affiliate Portal</span>
         </div>
         <div className="flex items-center gap-4">

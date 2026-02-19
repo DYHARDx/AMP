@@ -55,8 +55,8 @@ export default function Login() {
         <div className="glass-panel rounded-2xl p-8 neon-border-indigo">
           {/* Logo */}
           <div className="flex flex-col items-center mb-8">
-            <img src="/logo.png" alt="AMP Logo" className="w-16 h-16 mb-4 object-contain drop-shadow-lg" />
-            <h1 className="font-outfit font-black text-2xl gradient-text mb-1">AMP Mediaz</h1>
+            <img src="/logo.png" alt="Pyronex Logo" className="w-16 h-16 mb-4 object-contain drop-shadow-lg" />
+            <h1 className="font-outfit font-black text-2xl gradient-text mb-1">Pyronex</h1>
             <p className="text-muted-foreground text-sm">
               {role === 'admin' ? '⚡ Admin Access Portal' : role === 'affiliate' ? '🔗 Affiliate Login' : 'Intelligence Platform'}
             </p>
@@ -78,7 +78,7 @@ export default function Login() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="operator@amp-mediaz.com"
+                placeholder="operator@pyronex.com"
                 required
                 className="w-full px-4 py-3 rounded-lg text-sm bg-muted/50 border border-border focus:border-neon-indigo/50 focus:outline-none focus:ring-1 focus:ring-neon-indigo/30 transition-all placeholder:text-muted-foreground/50"
               />
@@ -132,7 +132,7 @@ export default function Login() {
         </div>
 
         <p className="text-center text-xs text-muted-foreground mt-6">
-          Protected by AMP Mediaz Security • All access is logged
+          Protected by Pyronex Security • All access is logged
         </p>
       </div>
     </div>

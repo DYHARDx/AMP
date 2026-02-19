@@ -34,9 +34,9 @@ export function AdminSidebar() {
     >
       {/* Logo */}
       <div className="flex items-center gap-3 px-4 py-5 border-b border-sidebar-border">
-        <img src="/logo.png" alt="AMP Logo" className="w-8 h-8 shrink-0 rounded-lg object-contain" />
+        <img src="/logo.png" alt="Pyronex Logo" className="w-8 h-8 shrink-0 rounded-lg object-contain" />
         {!collapsed && (
-          <span className="font-outfit font-bold text-base gradient-text whitespace-nowrap">AMP Mediaz</span>
+          <span className="font-outfit font-bold text-base gradient-text whitespace-nowrap">Pyronex</span>
         )}
         <button
           onClick={() => setCollapsed(!collapsed)}

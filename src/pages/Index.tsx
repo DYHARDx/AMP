@@ -51,8 +51,8 @@ export default function Index() {
       {/* Navbar */}
       <nav className="relative z-10 flex items-center justify-between px-8 py-5 border-b border-border/40">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="AMP Logo" className="w-8 h-8 rounded-lg object-contain" />
-          <span className="font-outfit font-bold text-xl gradient-text">AMP Mediaz</span>
+          <img src="/logo.png" alt="Pyronex Logo" className="w-8 h-8 rounded-lg object-contain" />
+          <span className="font-outfit font-bold text-xl gradient-text">Pyronex</span>
         </div>
         <div className="flex items-center gap-4">
           <button
@@ -124,7 +124,7 @@ export default function Index() {
       <section id="ecosystem" className="relative z-10 max-w-6xl mx-auto px-8 pb-32">
         <div className="text-center mb-16">
           <h2 className="font-outfit font-bold text-4xl md:text-5xl mb-4">
-            The <span className="gradient-text">AMP Ecosystem</span>
+            The <span className="gradient-text">Pyronex Ecosystem</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
             Every component is engineered for maximum performance and precision control.
@@ -155,8 +155,8 @@ export default function Index() {
       <footer className="relative z-10 border-t border-border/40 px-8 py-8">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="AMP Logo" className="w-7 h-7 rounded-lg object-contain" />
-            <span className="font-outfit font-bold text-sm gradient-text">AMP Mediaz</span>
+            <img src="/logo.png" alt="Pyronex Logo" className="w-7 h-7 rounded-lg object-contain" />
+            <span className="font-outfit font-bold text-sm gradient-text">Pyronex</span>
           </div>
           <div className="flex items-center gap-6 text-xs text-muted-foreground">
             <span className="hover:text-foreground cursor-pointer transition-colors">Privacy Policy</span>
@@ -164,7 +164,7 @@ export default function Index() {
             <button onClick={() => navigate('/login?role=admin')} className="hover:text-neon-indigo cursor-pointer transition-colors">
               Admin Access
             </button>
-            <span>© 2025 AMP Mediaz</span>
+            <span>© 2025 Pyronex</span>
           </div>
         </div>
       </footer>

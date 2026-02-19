@@ -10,7 +10,7 @@ interface BrandingSettings {
 }
 
 export default function Settings() {
-  const [branding, setBranding] = useState<BrandingSettings>({ siteName: 'AMP Mediaz', logoUrl: '', primaryColor: '#6366f1' });
+  const [branding, setBranding] = useState<BrandingSettings>({ siteName: 'Pyronex', logoUrl: '', primaryColor: '#6366f1' });
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -20,7 +20,7 @@ export default function Settings() {
       try {
         const snap = await getDoc(doc(db, 'settings', 'branding'));
         if (snap.exists()) setBranding(snap.data() as BrandingSettings);
-      } catch {}
+      } catch { }
       setLoading(false);
     };
     fetch();
@@ -33,7 +33,7 @@ export default function Settings() {
       await setDoc(doc(db, 'settings', 'branding'), branding);
       setSaved(true);
       setTimeout(() => setSaved(false), 2000);
-    } catch {}
+    } catch { }
     setSaving(false);
   };
 
