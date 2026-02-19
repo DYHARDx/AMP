@@ -16,14 +16,7 @@ interface Affiliate {
   createdAt?: string;
 }
 
-const firebaseConfig = {
-  apiKey: "AIzaSyAsXGL3iqPGdzRKWlyU3jzrV5oC1OG7fr4",
-  authDomain: "amp-mediaz.firebaseapp.com",
-  projectId: "amp-mediaz",
-  storageBucket: "amp-mediaz.firebasestorage.app",
-  messagingSenderId: "117826156017",
-  appId: "1:117826156017:web:cbbed13f3e79965c500050",
-};
+import { firebaseConfig } from '@/lib/firebase';
 
 export default function AffiliateManagement() {
   const [affiliates, setAffiliates] = useState<Affiliate[]>([]);
@@ -138,9 +131,8 @@ export default function AffiliateManagement() {
                     <div className="flex items-center gap-2">
                       <button
                         onClick={() => toggleStatus(aff)}
-                        className={`p-1.5 rounded-lg transition-colors ${
-                          aff.status === 'active' ? 'text-neon-indigo hover:bg-neon-indigo/10' : 'text-muted-foreground hover:bg-muted'
-                        }`}
+                        className={`p-1.5 rounded-lg transition-colors ${aff.status === 'active' ? 'text-neon-indigo hover:bg-neon-indigo/10' : 'text-muted-foreground hover:bg-muted'
+                          }`}
                         title={aff.status === 'active' ? 'Deactivate' : 'Activate'}
                       >
                         {aff.status === 'active' ? <ToggleRight className="w-4 h-4" /> : <ToggleLeft className="w-4 h-4" />}
