@@ -2,7 +2,7 @@ import { initializeApp, getApps } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyANIzhEnkCdwE0OI4PbFOJoMQ6hmr3v8ck",
   authDomain: "amp-mediao.firebaseapp.com",
   projectId: "amp-mediao",

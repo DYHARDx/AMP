@@ -9,14 +9,7 @@ import { UserCog, Plus, Trash2, X, AlertCircle } from 'lucide-react';
 
 interface Admin { id: string; name: string; email: string; role: string; createdAt?: string; }
 
-const firebaseConfig = {
-  apiKey: "AIzaSyAsXGL3iqPGdzRKWlyU3jzrV5oC1OG7fr4",
-  authDomain: "amp-mediaz.firebaseapp.com",
-  projectId: "amp-mediaz",
-  storageBucket: "amp-mediaz.firebasestorage.app",
-  messagingSenderId: "117826156017",
-  appId: "1:117826156017:web:cbbed13f3e79965c500050",
-};
+import { firebaseConfig } from '@/lib/firebase';
 
 export default function TeamAccess() {
   const [admins, setAdmins] = useState<Admin[]>([]);
