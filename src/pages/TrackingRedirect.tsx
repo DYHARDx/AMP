@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { db } from '@/lib/firebase';
 import { doc, getDoc, updateDoc, increment, collection } from 'firebase/firestore';
-import { Shield } from 'lucide-react';
 
 export default function TrackingRedirect() {
   const { linkId } = useParams<{ linkId: string }>();
@@ -104,9 +103,7 @@ export default function TrackingRedirect() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
       <div className="flex flex-col items-center gap-4 animate-fade-in">
-        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-neon-indigo to-neon-pink flex items-center justify-center">
-          <Shield className="w-6 h-6 text-background" />
-        </div>
+        <img src="/logo.png" alt="AMP Logo" className="w-12 h-12 rounded-2xl object-contain shadow-lg" />
         <div className="w-8 h-8 rounded-full border-2 border-neon-indigo border-t-transparent animate-spin" />
         <p className="text-muted-foreground text-sm">Routing through AMP Mediaz...</p>
       </div>

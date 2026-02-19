@@ -51,9 +51,7 @@ export default function Index() {
       {/* Navbar */}
       <nav className="relative z-10 flex items-center justify-between px-8 py-5 border-b border-border/40">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-neon-indigo to-neon-pink flex items-center justify-center">
-            <Shield className="w-4 h-4 text-background" />
-          </div>
+          <img src="/logo.png" alt="AMP Logo" className="w-8 h-8 rounded-lg object-contain" />
           <span className="font-outfit font-bold text-xl gradient-text">AMP Mediaz</span>
         </div>
         <div className="flex items-center gap-4">
@@ -137,17 +135,14 @@ export default function Index() {
           {features.map((feat, i) => (
             <div
               key={feat.title}
-              className={`glass-panel rounded-xl p-6 border animate-fade-in-up hover:border-neon-indigo/40 transition-all duration-300 ${
-                feat.color === 'indigo' ? 'neon-border-indigo' : feat.color === 'pink' ? 'neon-border-pink' : 'border-neon-cyan/20'
-              }`}
+              className={`glass-panel rounded-xl p-6 border animate-fade-in-up hover:border-neon-indigo/40 transition-all duration-300 ${feat.color === 'indigo' ? 'neon-border-indigo' : feat.color === 'pink' ? 'neon-border-pink' : 'border-neon-cyan/20'
+                }`}
               style={{ animationDelay: `${0.1 * i}s` }}
             >
-              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
-                feat.color === 'indigo' ? 'bg-neon-indigo/10' : feat.color === 'pink' ? 'bg-neon-pink/10' : 'bg-neon-cyan/10'
-              }`}>
-                <feat.icon className={`w-6 h-6 ${
-                  feat.color === 'indigo' ? 'text-neon-indigo' : feat.color === 'pink' ? 'text-neon-pink' : 'text-neon-cyan'
-                }`} />
+              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${feat.color === 'indigo' ? 'bg-neon-indigo/10' : feat.color === 'pink' ? 'bg-neon-pink/10' : 'bg-neon-cyan/10'
+                }`}>
+                <feat.icon className={`w-6 h-6 ${feat.color === 'indigo' ? 'text-neon-indigo' : feat.color === 'pink' ? 'text-neon-pink' : 'text-neon-cyan'
+                  }`} />
               </div>
               <h3 className="font-outfit font-bold text-xl mb-2">{feat.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{feat.description}</p>
@@ -160,9 +155,7 @@ export default function Index() {
       <footer className="relative z-10 border-t border-border/40 px-8 py-8">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-neon-indigo to-neon-pink flex items-center justify-center">
-              <Shield className="w-3.5 h-3.5 text-background" />
-            </div>
+            <img src="/logo.png" alt="AMP Logo" className="w-7 h-7 rounded-lg object-contain" />
             <span className="font-outfit font-bold text-sm gradient-text">AMP Mediaz</span>
           </div>
           <div className="flex items-center gap-6 text-xs text-muted-foreground">

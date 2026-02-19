@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { Shield, Eye, EyeOff, AlertCircle } from 'lucide-react';
+import { Eye, EyeOff, AlertCircle } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 
 export default function Login() {
@@ -55,9 +55,7 @@ export default function Login() {
         <div className="glass-panel rounded-2xl p-8 neon-border-indigo">
           {/* Logo */}
           <div className="flex flex-col items-center mb-8">
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-neon-indigo to-neon-pink flex items-center justify-center mb-4 shadow-lg" style={{ boxShadow: 'var(--glow-indigo)' }}>
-              <Shield className="w-7 h-7 text-background" />
-            </div>
+            <img src="/logo.png" alt="AMP Logo" className="w-16 h-16 mb-4 object-contain drop-shadow-lg" />
             <h1 className="font-outfit font-black text-2xl gradient-text mb-1">AMP Mediaz</h1>
             <p className="text-muted-foreground text-sm">
               {role === 'admin' ? '⚡ Admin Access Portal' : role === 'affiliate' ? '🔗 Affiliate Login' : 'Intelligence Platform'}

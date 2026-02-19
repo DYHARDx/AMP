@@ -6,59 +6,58 @@
 
 @layer base {
   :root {
-    /* AMP Mediaz Cyberpunk Dark Theme */
-    --background: 230 25% 4%;
-    --foreground: 210 40% 96%;
+    /* AMP Pure White Theme */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 230 20% 7%;
-    --card-foreground: 210 40% 96%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 230 20% 7%;
-    --popover-foreground: 210 40% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    /* Neon Indigo */
-    --primary: 247 84% 68%;
-    --primary-foreground: 230 25% 4%;
+    /* Neon Indigo - keeping accent color but on white */
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
 
-    /* Hot Pink */
-    --secondary: 322 85% 60%;
-    --secondary-foreground: 230 25% 4%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 230 20% 12%;
-    --muted-foreground: 215 20% 55%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 247 84% 68%;
-    --accent-foreground: 230 25% 4%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 230 30% 14%;
-    --input: 230 20% 10%;
-    --ring: 247 84% 68%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens */
-    --neon-indigo: 247 84% 68%;
-    --neon-pink: 322 85% 60%;
-    --neon-cyan: 188 85% 55%;
-    --glass-bg: 230 20% 8%;
-    --glass-border: 230 30% 18%;
+    /* Custom tokens - adjusted for light mode */
+    --neon-indigo: 221 83% 53%;
+    --neon-pink: 322 85% 60%; 
+    --neon-cyan: 188 85% 45%; /* Darker for better contrast on white */
+    --glass-bg: 0 0% 100%;
+    --glass-border: 214.3 31.8% 91.4%;
 
-    /* Glow effects */
-    --glow-indigo: 0 0 20px hsl(247 84% 68% / 0.4), 0 0 60px hsl(247 84% 68% / 0.15);
-    --glow-pink: 0 0 20px hsl(322 85% 60% / 0.4), 0 0 60px hsl(322 85% 60% / 0.15);
-    --glow-card: 0 8px 32px hsl(230 25% 4% / 0.6), inset 0 1px 0 hsl(230 30% 25% / 0.3);
+    /* Glow effects - subtle shadows for light mode */
+    --glow-indigo: 0 4px 20px hsl(221 83% 53% / 0.2);
+    --glow-pink: 0 4px 20px hsl(322 85% 60% / 0.2);
+    --glow-card: 0 2px 10px hsl(222.2 84% 4.9% / 0.05);
 
-    --sidebar-background: 230 25% 5%;
-    --sidebar-foreground: 210 30% 80%;
-    --sidebar-primary: 247 84% 68%;
-    --sidebar-primary-foreground: 230 25% 4%;
-    --sidebar-accent: 230 20% 10%;
-    --sidebar-accent-foreground: 210 40% 96%;
-    --sidebar-border: 230 30% 10%;
-    --sidebar-ring: 247 84% 68%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 215.4 16.3% 46.9%;
+    --sidebar-primary: 221.2 83.2% 53.3%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96.1%;
+    --sidebar-accent-foreground: 222.2 47.4% 11.2%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 221.2 83.2% 53.3%;
   }
 }
 
